@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  get "static_pages/home"
+  get "static_pages/help"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +55,5 @@ SampleApp::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get "static_pages/home"
 end
