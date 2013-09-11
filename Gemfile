@@ -33,6 +33,7 @@ group :doc do
 end
 
 group :development, :test do
+  gem 'guard-rspec'
   gem 'sqlite3'
   gem 'rspec-rails', '2.9.0'
 end
@@ -40,7 +41,14 @@ end
 
 
 group :test do
-  gem 'capybara'
+  gem 'rspec-rails', '2.9.0'
+  gem 'capybara', '1.1.2'
+  gem 'rb-fchange', '0.0.5'
+  gem 'rb-notifu', '0.0.4'
+  gem 'win32console', '1.3.0'
+  gem 'spork'
+  gem 'guard-spork'
+
 end
 
 group :production do
@@ -58,3 +66,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
